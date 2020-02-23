@@ -107,6 +107,13 @@
 
         .btn.download {
             margin-right: 1em;
+            display:none;
+        }
+        .btn.quote{
+            display:none;
+        }
+        .btn.share{
+            display:none;
         }
 
         #arrow-back,
@@ -389,6 +396,7 @@
 
             .btn.download {
                 margin-right: .3em;
+                display:none;
             }
 
             .logo {
@@ -959,7 +967,7 @@
 
                     }
                     document.querySelector('.file-name').innerHTML = path;
-                   /* document.querySelector('.btn.download').addEventListener('click',
+                    document.querySelector('.btn.download').addEventListener('click',
                         () => location.href = url
                     );
                     document.querySelector('.btn.quote').addEventListener('click',
@@ -988,7 +996,7 @@
                             btn.innerHTML = '已复制';
                             setTimeout(() => btn.innerHTML = '分享', 250);
                         }
-                    );*/
+                    );
                     switchRightDisplay('preview'); 
 
                     let start = null;
@@ -1317,9 +1325,9 @@
                 <div class="preview">
                     <div class="info">
                         <div class="file-name"></div>
-                      <!--  <div class="btn download">下载</div>
+                        <div class="btn download">下载</div>
                         <div class="btn quote">引用</div>
-                        <div class="btn share">分享</div> -->
+                        <div class="btn share">分享</div> 
                     </div>
                     <div class="content"></div>
                 </div> 
